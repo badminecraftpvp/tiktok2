@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Pulse</title>
+<meta name="description" content="Pulse - a mobile-first social app you can install on your home screen.">
+<meta name="theme-color" content="#0b0b10">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Pulse">
+<meta name="format-detection" content="telephone=no">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <header id="top"><h1>Pulse</h1><button id="install" hidden>Install app</button></header>
+  <div id="offline" hidden>You're offline. Showing saved content.</div>
+  <main id="view"></main>
+  <div id="ios" hidden><span>Install Pulse: tap <b>Share</b>, then <b>Add to Home Screen</b></span><button data-a="hideios" aria-label="Dismiss">✕</button></div>
+  <nav id="tabs"></nav>
+</div>
+<div id="sheet" class="sheet" hidden></div>
+<div id="story" hidden></div>
+<div id="toast" role="status"></div>
+<noscript>Pulse needs JavaScript.</noscript>
+<script src="app.js"></script>
+</body>
+</html>
